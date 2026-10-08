@@ -1,11 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Rake Game Builder",
-  "version": "1.0.0",
-  "description": "Build, preview, save, and export small browser games locally.",
-  "action": {
-    "default_popup": "popup.html",
-    "default_title": "Rake Game Builder"
-  },
-  "permissions": ["storage"]
+  "version": "2.0.0",
+  "description": "A full-page local game builder for Chrome.",
+  "action": {"default_title": "Open Rake Game Builder"},
+  "permissions": ["storage"],
+  "background": {"service_worker": "background.js"}
 }
