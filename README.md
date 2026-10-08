@@ -1,14 +1,22 @@
-# Rake Chrome Extension
+# Rake Game Builder
 
-A clean Manifest V3 Chrome extension with a local scratchpad.
+A zero-build Chrome Manifest V3 game-building extension.
 
-## Load it in Chrome
+## Use
 
-1. Download or clone this repository.
-2. Open `chrome://extensions`.
-3. Turn on **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the repository folder containing `manifest.json`.
-6. Pin **Rake** from the Extensions menu if you want quick access.
+1. Open chrome://extensions
+2. Enable Developer mode.
+3. Click Load unpacked.
+4. Select this repository folder — the folder must contain manifest.json.
+5. Open Rake Game Builder.
 
-Notes are stored locally with `chrome.storage.local`. No network access or external service is required.
+## Features
+
+- Scene/object editor
+- Position, size, name, and color controls
+- Local project persistence with chrome.storage.local
+- Editable JavaScript game logic
+- Live sandboxed preview
+- Export the current game as a standalone HTML file
+
+No npm, server, external assets, or network access are required.

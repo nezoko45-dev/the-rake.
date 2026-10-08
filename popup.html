@@ -1,28 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Rake</title>
-  <link rel="stylesheet" href="popup.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rake Game Builder</title>
+<link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <main class="app">
-    <header>
-      <div>
-        <p class="eyebrow">RAKE</p>
-        <h1>Scratchpad</h1>
-      </div>
-      <button id="clear" class="ghost" type="button" title="Clear note">Clear</button>
-    </header>
-
-    <textarea id="note" autofocus placeholder="Write something…"></textarea>
-
-    <footer>
-      <span id="status">Saved locally</span>
-      <span id="count">0 chars</span>
-    </footer>
-  </main>
-  <script src="popup.js"></script>
+<div class="app">
+<header><div><span class="eyebrow">RAKE</span><h1>Game Builder</h1></div><div class="actions"><button id="newBtn">New</button><button id="saveBtn">Save</button><button id="exportBtn" class="primary">Export</button></div></header>
+<nav class="tabs"><button class="tab active" data-tab="scene">Scene</button><button class="tab" data-tab="code">Code</button><button class="tab" data-tab="preview">Preview</button></nav>
+<section id="scene" class="panel active"><div class="grid"><aside><h2>Objects</h2><div id="objects"></div><button id="addBtn" class="wide">+ Add square</button></aside><main><div class="stage-wrap"><canvas id="canvas" width="640" height="360"></canvas></div><div class="inspector"><h2>Selected object</h2><div class="fields"><label>Name<input id="name"></label><label>X<input id="x" type="number"></label><label>Y<input id="y" type="number"></label><label>Size<input id="size" type="number" min="4"></label><label>Color<input id="color" type="color"></label></div></div></main></div></section>
+<section id="code" class="panel"><div class="code-head"><h2>Game code</h2><span>Runs in the Preview tab</span></div><textarea id="code" spellcheck="false"></textarea></section>
+<section id="preview" class="panel"><div class="preview-head"><h2>Live preview</h2><button id="runBtn" class="primary">Run game</button></div><iframe id="previewFrame" title="Game preview" sandbox="allow-scripts"></iframe></section>
+<footer><span id="status">Ready</span><span>Local project</span></footer>
+</div>
+<script src="popup.js"></script>
 </body>
 </html>

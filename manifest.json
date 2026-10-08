@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Rake",
+  "name": "Rake Game Builder",
   "version": "1.0.0",
-  "description": "A lightweight, local-first scratchpad for Chrome.",
+  "description": "Build, preview, save, and export small browser games locally.",
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Rake"
+    "default_title": "Rake Game Builder"
   },
-  "permissions": ["storage"],
-  "icons": {}
+  "permissions": ["storage"]
 }
