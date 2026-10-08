@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rake</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p class="eyebrow">RAKE</p>
+        <h1>Scratchpad</h1>
+      </div>
+      <button id="clear" class="ghost" type="button" title="Clear note">Clear</button>
+    </header>
+
+    <textarea id="note" autofocus placeholder="Write something…"></textarea>
+
+    <footer>
+      <span id="status">Saved locally</span>
+      <span id="count">0 chars</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

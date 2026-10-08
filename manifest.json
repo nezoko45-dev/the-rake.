@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Rake",
+  "version": "1.0.0",
+  "description": "A lightweight, local-first scratchpad for Chrome.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Rake"
+  },
+  "permissions": ["storage"],
+  "icons": {}
+}
